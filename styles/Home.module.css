@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  padding: 4rem;
+  min-height: 100%;
 }
 
 .description {
@@ -75,6 +75,25 @@
   display: flex;
   justify-content: space-around;
   margin: 2.5px;
+}
+
+.table{
+  margin: auto;
+  justify-content: center;
+  margin-top: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.fontFamily{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.table tr{
+  margin: 0rem 0rem;
+}
+
+.tableHead{
+  padding: 2rem;
 }
 
 .country_name{

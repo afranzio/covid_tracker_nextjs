@@ -1,8 +1,13 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Container from './containers/main'
+import { Navbar, Button, Link, Text, useTheme } from "@nextui-org/react";
+import { Layout } from "./components/navbar/Layout";
+import { AcmeLogo } from "./components/navbar/AcmeLogo";
+import GlobalData from "./data/global"
 
 export default function Home() {
+  const { isDark } = useTheme();
   return (
     <>
       <Head>
@@ -11,8 +16,45 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <Container />
+      <main className={styles.fontFamily}>
+        <div>
+          <Layout>
+            <Navbar isBordered={isDark} variant="floating">
+              <a href="#">
+                <Navbar.Brand>
+                  <Image
+                    className={styles.logo}
+                    src="/covid.svg"
+                    alt="covid Logo"
+                    width={25}
+                    height={25}
+                    priority
+                  />
+                  <Text b color="inherit" hideIn="xs" style={{ "paddingLeft": "8px" }}>
+                    Covid23
+                  </Text>
+                </Navbar.Brand>
+              </a>
+              <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
+                <Navbar.Link isActive href="/data/global">Global</Navbar.Link>
+                <Navbar.Link href="/data/countries">Country</Navbar.Link>
+                {/* <Navbar.Link href="#">Pricing</Navbar.Link>
+                <Navbar.Link href="#">Company</Navbar.Link> */}
+              </Navbar.Content>
+              <Navbar.Content>
+                <Navbar.Link color="inherit" target="_blank" href="https://afranzio.github.io/">
+                  Portfolio
+                </Navbar.Link>
+                <Navbar.Item>
+                  <Button auto flat as={Link} target="_blank" href="https://github.com/afranzio?tab=repositories">
+                    GitHub
+                  </Button>
+                </Navbar.Item>
+              </Navbar.Content>
+            </Navbar>
+            <GlobalData />
+          </Layout>
+        </div>
       </main>
     </>
   )
