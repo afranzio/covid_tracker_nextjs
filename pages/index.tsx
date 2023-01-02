@@ -3,7 +3,6 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Navbar, Button, Link, Text, useTheme } from "@nextui-org/react";
 import { Layout } from "./components/navbar/Layout";
-import { AcmeLogo } from "./components/navbar/AcmeLogo";
 import GlobalData from "./data/global"
 
 export default function Home() {

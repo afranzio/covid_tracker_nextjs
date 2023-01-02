@@ -68,6 +68,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 1.5rem;
+  justify-content: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -139,9 +140,13 @@
   transform: translateZ(0);
 }
 
-.logo,
-.thirteen {
+.logo
+ {
   position: relative;
+}
+
+.loader{
+  margin: 10rem;
 }
 
 .thirteen {

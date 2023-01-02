@@ -56,7 +56,7 @@ export default function ContentGenerator() {
 
   return (
     <>
-      {isLoading ? <Image alt='loader' src={Loader} width={100} height={100} /> :
+      {isLoading ? <Image alt='loader' className={styles.loader}  src={Loader} width={100} height={100} /> :
         <div className={styles.card_container}>
           {data.map((element) => (
             pressAbleCard(element)
