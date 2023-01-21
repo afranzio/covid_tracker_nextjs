@@ -97,6 +97,10 @@
   padding: 2rem;
 }
 
+.tableHead tr th{
+  padding: 15px 30px;
+}
+
 .country_name{
   text-decoration: underline;
 }
@@ -189,6 +193,10 @@
     rgba(var(--tile-end-rgb), 1)
   );
   background-clip: content-box;
+}
+
+.tableData td{
+  padding: 5px 30px;
 }
 
 /* Enable hover only on non-touch devices */

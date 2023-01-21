@@ -19,7 +19,7 @@ export default function GlobalData() {
             })
     }, [])
 
-    function convertToInternationalCurrencySystem(labelValue:number) {
+    function convertToInternationalCurrencySystem(labelValue: number) {
 
         // Nine Zeroes for Billions
         return Math.abs(Number(labelValue)) >= 1.0e+9
@@ -78,10 +78,12 @@ export default function GlobalData() {
                         </thead>
                         <tbody>
                             {Object.keys(worldData).map((key: any, index: number) => (
-                                <tr key={index} id={index.toString()}>
-                                    <td>{key.toUpperCase()}</td>
-                                    <td style={{ "paddingLeft": "5rem" }}>{convertToInternationalCurrencySystem(worldData[key])}</td>
-                                </tr>
+                                key != "oneCasePerPeople" && key != "oneDeathPerPeople" && key != "oneTestPerPeople" ?
+                                    <tr key={index} id={index.toString()} className={styles.tableData}>
+                                        <td>{key.toUpperCase()}</td>
+                                        <td style={{ "paddingLeft": "5rem" }}>{convertToInternationalCurrencySystem(worldData[key])}</td>
+                                    </tr>
+                                    : ""
                             ))}
                         </tbody>
                     </table>

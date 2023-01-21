@@ -37,8 +37,6 @@ export default function Home() {
               <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
                 <Navbar.Link isActive href="/data/global">Global</Navbar.Link>
                 <Navbar.Link href="/data/countries">Country</Navbar.Link>
-                {/* <Navbar.Link href="#">Pricing</Navbar.Link>
-                <Navbar.Link href="#">Company</Navbar.Link> */}
               </Navbar.Content>
               <Navbar.Content>
                 <Navbar.Link color="inherit" target="_blank" href="https://afranzio.github.io/">
