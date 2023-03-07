@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import { Navbar, Button, Link, Text, useTheme } from "@nextui-org/react";
 import { Layout } from "./components/navbar/Layout";
-import GlobalData from "./data/global"
+import HomeOption from "./home"
 
 export default function Home() {
   const { isDark } = useTheme();
@@ -49,6 +50,7 @@ export default function Home() {
                 </Navbar.Item>
               </Navbar.Content>
             </Navbar>
+            <HomeOption />
           </Layout>
         </div>
       </main>
