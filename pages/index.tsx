@@ -49,7 +49,6 @@ export default function Home() {
                 </Navbar.Item>
               </Navbar.Content>
             </Navbar>
-            <GlobalData />
           </Layout>
         </div>
       </main>
