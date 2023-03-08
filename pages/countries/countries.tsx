@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ContentGenerator from './countriesData'
+import ContentGenerator from '.'
 import styles from '../../styles/Home.module.css'
 import { Text } from "@nextui-org/react";
 
