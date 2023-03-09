@@ -1,8 +1,9 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import 'bootstrap/dist/css/bootstrap.css'
+import styles from '../styles/Home.module.css'
 import { Layout } from "./components/navbar/Layout";
 import NavBar from "./components/navbar/Navbar";
+import FooterBar from "./components/footer";
 import HomeOption from "./home"
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
           <Layout>
             <NavBar />
             <HomeOption />
+            <FooterBar />
           </Layout>
         </div>
       </main>

@@ -1,12 +1,15 @@
 import Image from 'next/image'
 import Head from 'next/head'
+import 'bootstrap/dist/css/bootstrap.css'
 import styles from '../../styles/Home.module.css'
 import Loader from '../../public/loader.gif'
 import { Text } from "@nextui-org/react";
 import { useState, useEffect } from 'react';
 
+
 import { Layout } from "../components/navbar/Layout";
 import NavBar from "../components/navbar/Navbar";
+import FooterBar from "../components/footer";
 
 export default function GlobalData() {
 
@@ -100,6 +103,7 @@ export default function GlobalData() {
                                 </table>
                             }
                         </div>
+                        <FooterBar />
                     </Layout>
                 </div>
             </main>

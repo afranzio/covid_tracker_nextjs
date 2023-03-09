@@ -8,6 +8,11 @@ export default function HomeOption() {
 
   return (
     <>
+      <Head>
+        <title>
+          Statistics
+        </title>
+      </Head>
       <div className='container'>
         <div className={styles.homePageContainer}>
           <div className='d-flex justify-content-around w-100'>
